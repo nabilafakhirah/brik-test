@@ -1,16 +1,12 @@
 # briktest
 
-A new Flutter project.
+A CRUD Flutter project, using Flutter, Provider, and crudcrud for its backend.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Setup
+To be able to run the project, all you need to do is do as the following:
+- Create your .env file in the root directory of the project
+- Insert your crudcrud URL under 'BASE_URL' in your .env file, such as below:
+```
+BASE_URL ='https://crudcrud.com/api/{your-crud-token-here}/'
+```
+- After that, just run `dart run build_runner build --delete-conflicting-outputs` and you'll be good to go!
