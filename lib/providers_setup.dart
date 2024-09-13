@@ -5,6 +5,7 @@ import 'package:provider/single_child_widget.dart';
 import 'core/services/alice_service.dart';
 import 'core/services/dio_service.dart';
 import 'core/services/navigation_service.dart';
+import 'env/env.dart';
 
 List<SingleChildWidget> getProviders() {
   final List<SingleChildWidget> providers = <SingleChildWidget>[
@@ -38,7 +39,7 @@ List<SingleChildWidget> apiServices = <SingleChildWidget>[
   ProxyProvider<DioService, ProductsApi>(
     update: (_, DioService dioService, __) => ProductsApi(
       dioService.dio,
-      baseUrl: 'https://crudcrud.com/api/c3d32b66e78446bab5643c6039162d4a/',
+      baseUrl: Env.baseURL,
     ),
   ),
 ];
